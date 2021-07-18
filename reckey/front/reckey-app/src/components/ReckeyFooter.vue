@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 footer {
     margin: 0 3.5416666666666665%;
     position: relative;
