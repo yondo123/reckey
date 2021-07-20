@@ -7,19 +7,18 @@
     --icon-color: #EC7357;
     --icon-hover-color: #FDD692;
     /* key-type */
-    --brown-key-color :#cd6133;
-    --blue-key-color :#0984e3;
-    --black-key-color :#2d3436;
-    --red-key-color :#d63031;
-    --etc-key-color : #6c5ce7;
+    --brown-key-color: #cd6133;
+    --blue-key-color: #0984e3;
+    --black-key-color: #2d3436;
+    --red-key-color: #d63031;
+    --etc-key-color: #6c5ce7;
 }
 
 body {
-    background-color: #fff !important; 
+    background-color: #fff !important;
     margin: 0 !important;
-    height: 100vh !important; 
+    height: 100vh !important;
 }
-
 
 html {
     font-size: 10px;
@@ -33,7 +32,7 @@ button {
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--font-color);
 }

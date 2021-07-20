@@ -42,7 +42,10 @@ main::-webkit-scrollbar {
     display: none;
 }
 
+
 .sort select {
+    padding : 0 1rem;
+    -webkit-appearance: none;
     margin-top: 1.4rem;
     border-radius: 1rem;
     background-color: var(--accent-color);

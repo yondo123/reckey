@@ -27,7 +27,6 @@ header {
     justify-content: space-between;
     margin-top: 2.8rem;
     padding : 0.4rem;
-    border: 1px solid var(--border-color);
 }
 
 header button {
