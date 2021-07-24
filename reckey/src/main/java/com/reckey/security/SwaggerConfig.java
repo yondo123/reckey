@@ -39,7 +39,7 @@ public class SwaggerConfig {
 	private ApiInfo apiInfo(String title, String version) {
 		return new ApiInfoBuilder()
 				.title("Reckey API")
-				.description("Reckey API ÆäÀÌÁöÀÔ´Ï´Ù.")
+				.description("Reckey API í˜ì´ì§€ì…ë‹ˆë‹¤.")
 				.version("1.0")
 				.build();
 	}

@@ -17,7 +17,7 @@ import io.swagger.annotations.ApiResponses;
 @RequestMapping("/reckey")
 public class TestController {
 
-	@ApiOperation(value="mainTest", notes="테스트 요청메서드입니다.")
+	@ApiOperation(value="mainTest", notes="main 而⑦듃濡ㅻ윭 API")
 	@ApiResponses({
 		@ApiResponse(code = 200, message = "OK !!"),
 		@ApiResponse(code = 500, message = "Server Error !!"),
