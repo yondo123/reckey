@@ -7,15 +7,15 @@
             </select>
         </div>
         <ol class="keyboards">
-            <li class="item">
+            <li class="item" v-for="(item, index) in keyboards" :key="index">
                 <a href="#">
                     <img src="../assets/img/leopold.png" alt="leopold" />
                     <div class="product">
                         <div class="product-name">
-                            <strong>LEOPOLD LEOPOLD</strong>
+                            <strong>{{ item.name }}</strong>
                         </div>
                         <div class="product-detail">
-                            <span class="rating">10.0</span>
+                            <span class="rating">{{ item.rating }}</span>
                             <span class="type">10key</span>
                         </div>
                     </div>

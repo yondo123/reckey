@@ -1,6 +1,7 @@
 import {createApp} from 'vue';
 import App from './App.vue';
 import router from './router';
+import Vuex from 'vuex';
 import {store} from './store/store.js';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faBars, faUser} from '@fortawesome/free-solid-svg-icons';
@@ -16,4 +17,5 @@ const reckeyApp = createApp(App);
 reckeyApp.component('font-awesone-icon', FontAwesomeIcon);
 reckeyApp.use(router);
 reckeyApp.use(store);
+reckeyApp.use(Vuex);
 reckeyApp.mount('#app');

@@ -3,6 +3,27 @@ const state = {
 };
 const getters = {
     getKeyboardList(state) {
+        state.keyboards = [
+            {
+                name: '',
+                type: 'F', //full
+                rating: '3.6',
+                switch: ['red', 'brown', 'blue', 'green', 'etc']
+            },
+            {
+                name: '',
+                type: 'T', //10-key
+                rating: '3.6',
+                switch: ['red', 'brown', 'blue']
+            },
+            {
+                name: '',
+                type: 'L', //ETC(less)
+                rating: '3.6',
+                switch: ['red', 'brown']
+            }
+        ];
+
         return state.keyboards;
     }
 };
