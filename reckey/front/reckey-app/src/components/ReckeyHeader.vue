@@ -1,16 +1,16 @@
 <template>
-        <header>
-            <h1 class="title">RECKEY.net</h1>
-            <button type="button"><i class="fas fa-bars"></i></button>
-            <a href="#" class="main-link">RECKEY.net</a>
-            <button type="button"><i class="fas fa-user"></i></button>
-        </header>
+    <header>
+        <h1 class="title">RECKEY.net</h1>
+        <button type="button"><i class="fas fa-bars"></i></button>
+        <a href="#" class="main-link">RECKEY.net</a>
+        <button type="button"><i class="fas fa-user"></i></button>
+    </header>
 </template>
 <script>
-export default {}
+export default {};
 </script>
 <style scoped>
-.title { 
+.title {
     display: none;
 }
 
@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 2.8rem;
-    padding : 0.4rem;
+    padding: 0.4rem;
 }
 
 header button {
@@ -36,8 +36,7 @@ header button {
 
 header button:hover {
     background-color: var(--icon-hover-color);
-    color : #fff;
+    color: #fff;
     transition: color, 750ms;
 }
-
 </style>

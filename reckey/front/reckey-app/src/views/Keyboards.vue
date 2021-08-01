@@ -3,12 +3,10 @@
 </template>
 
 <script>
-import ReckeyKeyboards from '../components/ReckeyKeyboards.vue'
+import ReckeyKeyboards from '../components/ReckeyKeyboards.vue';
 export default {
-  components: { ReckeyKeyboards }
-}
+    components: {ReckeyKeyboards}
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

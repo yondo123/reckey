@@ -2,23 +2,17 @@
     <footer>
         <ul class="footer-link">
             <li>
-                <a href="#">
-                    about
-                </a>
+                <a href="#"> about </a>
             </li>
             <li>
-                <a href="#">
-                    login
-                </a>
+                <a href="#"> login </a>
             </li>
         </ul>
     </footer>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
@@ -38,16 +32,16 @@ footer {
 }
 
 .footer-link li {
-    padding : 1rem 0;
+    padding: 1rem 0;
     margin-right: 1rem;
 }
 
-.footer-link a{
+.footer-link a {
     color: var(--main-color);
     font-size: 1.2rem;
 }
 
-.hide{
+.hide {
     display: none !important;
 }
 </style>

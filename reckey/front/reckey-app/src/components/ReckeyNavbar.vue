@@ -1,20 +1,18 @@
 <template>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="#">about</a>
-                </li>
-                <li>
-                    <a href="#">keyboards</a>
-                </li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">keyboards</a>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
@@ -22,7 +20,7 @@ export default {
     display: none;
 }
 
-.menu-open{
+.menu-open {
     display: block;
 }
 </style>

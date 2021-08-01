@@ -3,11 +3,10 @@
 </template>
 
 <script>
-import ReckeyCompany from '../components/ReckeyCompany.vue'
+import ReckeyCompany from '../components/ReckeyCompany.vue';
 export default {
-     components: { ReckeyCompany }
-}
+    components: {ReckeyCompany}
+};
 </script>
 
-<style>
-</style>
+<style></style>

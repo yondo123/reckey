@@ -6,7 +6,7 @@
         <ol class="company-list">
             <li class="item">
                 <a href="#">
-                    <img src="../assets/img/abko.jpeg" alt="leopold">
+                    <img src="../assets/img/abko.jpeg" alt="leopold" />
                     <div class="company">
                         <div class="company-name">
                             <h2>ABKO</h2>
@@ -19,9 +19,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scope>

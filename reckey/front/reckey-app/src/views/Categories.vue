@@ -3,12 +3,10 @@
 </template>
 
 <script>
-import ReckeyCategories from '../components/ReckeyCategories.vue'
+import ReckeyCategories from '../components/ReckeyCategories.vue';
 export default {
-  components: { ReckeyCategories }
-}
+    components: {ReckeyCategories}
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -1,10 +1,10 @@
-<template> 
-  <div class="wrap">
-    <reckey-header></reckey-header>
-    <reckey-navbar></reckey-navbar>
-    <router-view></router-view>
-    <reckey-footer></reckey-footer>
-  </div>
+<template>
+    <div class="wrap">
+        <reckey-header></reckey-header>
+        <reckey-navbar></reckey-navbar>
+        <router-view></router-view>
+        <reckey-footer></reckey-footer>
+    </div>
 </template>
 
 <script>
@@ -13,14 +13,13 @@ import ReckeyFooter from './components/ReckeyFooter.vue';
 import ReckeyNavbar from './components/ReckeyNavbar.vue';
 
 export default {
-  name: 'App',
-  components: {
-    ReckeyHeader,
-    ReckeyFooter,
-    ReckeyNavbar
-  }
-}
+    name: 'App',
+    components: {
+        ReckeyHeader,
+        ReckeyFooter,
+        ReckeyNavbar
+    }
+};
 </script>
 
-<style>
-</style>
+<style></style>

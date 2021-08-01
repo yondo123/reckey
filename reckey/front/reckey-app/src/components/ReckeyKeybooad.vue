@@ -1,12 +1,12 @@
 <template>
-   <!-- 팝업모드 시 class="popup" -->
+    <!-- 팝업모드 시 class="popup" -->
     <main class="popup">
         <div class="model">
             <strong>Leopold FC900R</strong>
         </div>
         <div class="keyboard-info">
             <div class="image">
-                <img src="../assets/img/model.jpg" alt="FC900R">
+                <img src="../assets/img/model.jpg" alt="FC900R" />
             </div>
             <div class="detail">
                 <span class="type-blue key">10 KEY</span>
@@ -32,10 +32,7 @@
 </template>
 
 <script scope>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-</style>
+<style></style>

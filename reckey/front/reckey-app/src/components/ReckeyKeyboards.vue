@@ -1,5 +1,5 @@
 <template>
-<main>
+    <main>
         <div class="sort">
             <select name="sort" id="sort-by">
                 <option value="rate">평점 순</option>
@@ -9,7 +9,7 @@
         <ol class="keyboards">
             <li class="item">
                 <a href="#">
-                    <img src="../assets/img/leopold.png" alt="leopold">
+                    <img src="../assets/img/leopold.png" alt="leopold" />
                     <div class="product">
                         <div class="product-name">
                             <strong>LEOPOLD LEOPOLD</strong>
@@ -26,9 +26,12 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
 export default {
-
-}
+    computed: {
+        ...mapGetters('keyboard', {keyboards: 'getKeyboardList'})
+    }
+};
 </script>
 
 <style scoped>
@@ -42,9 +45,8 @@ main::-webkit-scrollbar {
     display: none;
 }
 
-
 .sort select {
-    padding : 0 1rem;
+    padding: 0 1rem;
     -webkit-appearance: none;
     margin-top: 1.4rem;
     border-radius: 1rem;

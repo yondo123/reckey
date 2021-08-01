@@ -23,9 +23,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 <style scoped>
 main {
@@ -75,7 +73,7 @@ main::-webkit-scrollbar {
     margin: 0;
     display: inline-block;
     background-color: var(--red-key-color);
-    margin: 0.6rem 0; 
+    margin: 0.6rem 0;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;

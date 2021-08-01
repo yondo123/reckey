@@ -12,8 +12,7 @@
                 <i class="fas fa-3x fa-microphone"></i>
             </button>
         </div>
-        <textarea name="review" id="review-area" cols="15" rows="10">
-        </textarea>
+        <textarea name="review" id="review-area" cols="15" rows="10"> </textarea>
         <div class="article-button">
             <button type="button" class="write">등록</button>
             <button type="button" class="cancel">취소</button>
@@ -22,11 +21,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

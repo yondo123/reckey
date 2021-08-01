@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import ReckeyKeyboardDetail from '../components/ReckeyKeyboardDetail.vue'
-import ReckeyKeyboard from '../components/ReckeyKeybooad.vue'
+import ReckeyKeyboardDetail from '../components/ReckeyKeyboardDetail.vue';
+import ReckeyKeyboard from '../components/ReckeyKeybooad.vue';
 export default {
-    components : {
+    components: {
         ReckeyKeyboard,
         ReckeyKeyboardDetail
     }
-}
+};
 </script>
 
 <style>
@@ -99,15 +99,14 @@ img {
 }
 .detail > .type-etc {
     background-color: var(--etc-key-color);
-    color : #fff;
+    color: #fff;
 }
 
 .price {
     position: absolute;
     right: 0;
-    font-size: 1.8rem
+    font-size: 1.8rem;
 }
-
 
 .review-list {
     padding: 0;
@@ -127,12 +126,11 @@ img {
     padding: 1.0416666666666665%;
 }
 
-
 .review-item:first-child {
     margin-top: 1.75rem;
 }
 
-.review-item .btn-spread{
+.review-item .btn-spread {
     position: absolute;
     right: -10%;
     background-color: #fff;
@@ -141,12 +139,12 @@ img {
 
 .review-item .btn-recplay {
     position: absolute;
-    top : 50%;
+    top: 50%;
     right: 5%;
     transform: translateY(-50%);
     width: 5rem;
     height: 5rem;
-    border : 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 100%;
     background-color: var(--accent-color);
 }
@@ -157,7 +155,8 @@ img {
     border-radius: 50%;
 } */
 
-.writer, .summary {
+.writer,
+.summary {
     color: var(--font-color);
 }
 
@@ -178,7 +177,7 @@ img {
     padding: 1rem;
     border: 0.1rem solid var(--border-color);
     border-radius: 1rem;
-    width:72.083333333333336%;
+    width: 72.083333333333336%;
     height: 50%;
 }
 
@@ -203,14 +202,15 @@ img {
 }
 
 .btn-mic {
-    width:5rem;
+    width: 5rem;
     height: 5rem;
     border-style: none;
     border-radius: 50%;
     background-color: var(--accent-color);
 }
 
-.interactive, .article-button {
+.interactive,
+.article-button {
     margin-right: 1rem;
     display: flex;
     justify-content: flex-end;
@@ -221,11 +221,14 @@ img {
     margin-right: 1.2rem;
 }
 
-.interactive, textarea {
+.interactive,
+textarea {
     margin-bottom: 1rem;
 }
 
-.write, .cancel, .registry {
+.write,
+.cancel,
+.registry {
     padding: 0.4rem 1.2rem;
     border: 0.1rem solid var(--border-color);
     border-radius: 1rem;
