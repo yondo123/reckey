@@ -5,19 +5,22 @@ const getters = {
     getKeyboardList(state) {
         state.keyboards = [
             {
-                name: '',
+                imageUrl: '../assets/img/leopold.png',
+                name: 'LEOPOLD',
                 type: 'F', //full
                 rating: '3.6',
                 switch: ['red', 'brown', 'blue', 'green', 'etc']
             },
             {
-                name: '',
+                imageUrl: '../assets/img/abko.png',
+                name: 'ABKO G',
                 type: 'T', //10-key
                 rating: '3.6',
                 switch: ['red', 'brown', 'blue']
             },
             {
-                name: '',
+                imageUrl: '../assets/img/logitech.png',
+                name: 'logitech cherry100',
                 type: 'L', //ETC(less)
                 rating: '3.6',
                 switch: ['red', 'brown']
@@ -54,7 +57,7 @@ const mutations = {
     }
 };
 const actions = {
-    //todo call API code
+    //@todo call API code
 };
 
 export default {

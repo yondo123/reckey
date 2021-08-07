@@ -1,15 +1,15 @@
 <template>
     <main>
         <div class="sort">
-            <select name="sort" id="sort-by">
+            <select name="sort" id="sort-by" @change="getKeyboardsList">
                 <option value="rate">평점 순</option>
                 <option value="latest">최신 순</option>
             </select>
         </div>
         <ol class="keyboards">
-            <li class="item" v-for="(item, index) in keyboards" :key="index">
+            <li class="item" v-for="(item, index) in keyboards" v-bind:key="index">
                 <a href="#">
-                    <img src="../assets/img/leopold.png" alt="leopold" />
+                    <img v-bind:src="item.imageUrl" v-bind:alt="item.name" />
                     <div class="product">
                         <div class="product-name">
                             <strong>{{ item.name }}</strong>
@@ -28,8 +28,21 @@
 <script>
 import {mapGetters} from 'vuex';
 export default {
+    data() {
+        return {
+            sortType: 'latest'
+        };
+    },
+    mounted() {
+        //@todo call API
+    },
     computed: {
         ...mapGetters('keyboard', {keyboards: 'getKeyboardList'})
+    },
+    methods: {
+        getKeyboardsList: function (event) {
+            this.sortType = event.target.value;
+        }
     }
 };
 </script>

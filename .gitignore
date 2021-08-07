@@ -12,6 +12,9 @@ tmp/
 *.classpath
 .project
 .HELP.md
+.gradle
+.classpath
+.settings
 
 local.properties
 .settings/
@@ -75,3 +78,5 @@ local.properties
 
 # vue build
 reckey/src/main/resources
+reckey/front/node_modules
+reckey/.gradle/checksums/checksums.lock

@@ -1,4 +1,4 @@
-import { createWebHistory, createRouter } from 'vue-router';
+import {createWebHistory, createRouter} from 'vue-router';
 import Keyboard from '../views/Keyboard.vue';
 import Categories from '../views/Categories.vue';
 import Company from '../views/Company.vue';
