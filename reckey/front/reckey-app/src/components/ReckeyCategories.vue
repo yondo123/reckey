@@ -4,22 +4,27 @@
             <strong>Category</strong>
         </div>
         <ol class="company-list">
-            <li class="item">
-                <a href="#">
+            <li class="item" v-for="(item, index) in companies" v-bind:key="index">
+                <router-link v-bind:to="`/company/${item.id}`">
                     <img src="../assets/img/abko.jpeg" alt="leopold" />
                     <div class="company">
                         <div class="company-name">
-                            <h2>ABKO</h2>
+                            <h2>{{ item.name }}</h2>
                         </div>
                     </div>
-                </a>
+                </router-link>
             </li>
         </ol>
     </main>
 </template>
 
 <script>
-export default {};
+import {mapGetters} from 'vuex';
+export default {
+    computed: {
+        ...mapGetters('comapny', {companies: 'getCompanyList'})
+    }
+};
 </script>
 
 <style scope>
