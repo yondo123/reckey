@@ -1,11 +1,11 @@
 :root {
     /* ui-pallete */
-    --border-color: #D9D6D0;
-    --accent-color: #262F40;
-    --main-color: #6C7D8C;
-    --font-color: #151B26;
-    --icon-color: #EC7357;
-    --icon-hover-color: #FDD692;
+    --border-color: #d9d6d0;
+    --accent-color: #262f40;
+    --main-color: #6c7d8c;
+    --font-color: #151b26;
+    --icon-color: #ec7357;
+    --icon-hover-color: #fdd692;
     /* key-type */
     --brown-key-color: #cd6133;
     --blue-key-color: #0984e3;
@@ -35,6 +35,11 @@ button {
 a {
     text-decoration: none;
     color: var(--font-color);
+}
+
+.hide {
+    visibility: hidden;
+    display: none !important;
 }
 
 /* font-awesome */

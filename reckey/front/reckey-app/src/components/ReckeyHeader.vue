@@ -1,13 +1,20 @@
 <template>
     <header>
         <h1 class="title">RECKEY.net</h1>
-        <button type="button"><i class="fas fa-bars"></i></button>
-        <a href="#" class="main-link">RECKEY.net</a>
+        <button type="button" v-on:click="toggleMenu"><i class="fas fa-bars"></i></button>
+        <router-link to="/" class="main-link">RECKEY.net</router-link>
         <button type="button"><i class="fas fa-user"></i></button>
     </header>
 </template>
 <script>
-export default {};
+import {mapMutations} from 'vuex';
+export default {
+    methods: {
+        ...mapMutations('common', {
+            toggleMenu: 'toggleMenuActive'
+        })
+    }
+};
 </script>
 <style scoped>
 .title {
