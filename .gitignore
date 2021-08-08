@@ -80,3 +80,4 @@ local.properties
 reckey/src/main/resources
 reckey/front/node_modules
 reckey/.gradle/checksums/checksums.lock
+reckey/src/main/resources/application.properties
