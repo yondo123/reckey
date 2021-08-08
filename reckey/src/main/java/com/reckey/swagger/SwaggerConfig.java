@@ -1,4 +1,4 @@
-package com.reckey.security;
+package com.reckey.swagger;
 
 import java.util.HashSet;
 import java.util.Set;
