@@ -22,7 +22,6 @@ import com.zaxxer.hikari.HikariDataSource;
 @EnableTransactionManagement
 public class DatabaseConfig {
 
-	
 	@Bean
 	@ConfigurationProperties(prefix = "spring.datasource.hikari")
 	public HikariConfig hikariConfig() {

@@ -1,5 +1,7 @@
 package com.reckey.dto;
 
+import java.util.List;
+
 import io.swagger.annotations.ApiParam;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,26 +15,25 @@ public class KeyboardDTO {
 	@AllArgsConstructor
 	@NoArgsConstructor
 	public static class Info{
-		private String compImgUrl;
-		private String kbdName;
-		private String kbdType;
-		private double kbdRate;
-		private String kbdSwitch;
-		private String kbdImgUrl;
+		private String imgUrl;
+		private String name;
+		private String type;
+		private double rate;
+		private String switchType;
 	}
 	
 	@Getter
 	@Setter
 	public static class RequestList {
 		
-		@ApiParam(value = "sortMethod", required = true)
-		private String sortMethod;
+		@ApiParam(value = "sortType", required = true)
+		private String sortType;
 		
-		@ApiParam(value ="pageNum", required = true)
-		private int pageNum;
+		@ApiParam(value ="offset", required = true)
+		private int offset;
 		
-		@ApiParam(value="pagePerCnt", required = true)
-		private int pagePerCnt;
+		@ApiParam(value="page", required = true)
+		private int page;
 	}
 	
 	@Getter
@@ -46,12 +47,8 @@ public class KeyboardDTO {
 	@Setter
 	public static class Response {
 		
-		private String compImgUrl;
-		private String kbdName;
-		private String kbdType;
-		private double kbdRate;
-		private String kbdSwitch;
-		private String kbdImgUrl;
+		private int listSize = 0;
+		private List<Info> items;
 	}
 	
 }
