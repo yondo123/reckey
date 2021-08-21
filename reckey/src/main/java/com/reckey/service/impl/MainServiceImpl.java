@@ -17,8 +17,8 @@ public class MainServiceImpl implements MainService{
 	MainRepository mainRepository;
 	
 	@Override
-	public List<KeyboardDTO.Info> getKeyboardList() {
-		List<KeyboardDTO.Info> keyboardList = mainRepository.getKeyboardList();
+	public List<KeyboardDTO.Info> getKeyboardList(KeyboardDTO.RequestList request) {
+		List<KeyboardDTO.Info> keyboardList = mainRepository.getKeyboardList(request);
 		return keyboardList;
 	}
 

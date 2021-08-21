@@ -21,7 +21,7 @@ public class MainController {
 	@GetMapping("keyboard-list")
 	@ResponseBody
 	public List<KeyboardDTO.Info> keyboardList(@RequestBody KeyboardDTO.RequestList request) {
-		List<KeyboardDTO.Info> list = mainService.getKeyboardList();
+		List<KeyboardDTO.Info> list = mainService.getKeyboardList(request);
 		return list;
 	}
 	

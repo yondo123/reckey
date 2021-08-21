@@ -10,6 +10,6 @@ import com.reckey.dto.KeyboardDTO;
 @Repository
 public interface MainRepository {
 
-	public List<KeyboardDTO.Info> getKeyboardList();
+	public List<KeyboardDTO.Info> getKeyboardList(KeyboardDTO.RequestList request);
 	public List<CompanyDTO.Info> getCompanyList();
 }

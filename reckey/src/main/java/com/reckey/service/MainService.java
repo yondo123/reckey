@@ -8,7 +8,7 @@ import com.reckey.dto.KeyboardDTO;
 
 public interface MainService {
 
-	public List<KeyboardDTO.Info> getKeyboardList();
+	public List<KeyboardDTO.Info> getKeyboardList(KeyboardDTO.RequestList request);
 
 	public List<CompanyDTO.Info> getCompanyList();
 }

@@ -15,8 +15,9 @@ public class KeyboardDTO {
 	@AllArgsConstructor
 	@NoArgsConstructor
 	public static class Info{
-		private String imgUrl;
+		private String id;
 		private String name;
+		private String imgUrl;
 		private String type;
 		private double rate;
 		private String switchType;
