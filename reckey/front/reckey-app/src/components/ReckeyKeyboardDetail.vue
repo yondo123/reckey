@@ -1,12 +1,26 @@
 <template>
     <section class="write-wrap" v-bind:class="{hide: closed}">
         <div class="interactive">
-            <div class="rating-wrap">
-                <i class="fas fa-2x fa-star star"></i>
-                <i class="fas fa-2x fa-star star"></i>
-                <i class="fas fa-2x fa-star star"></i>
-                <i class="fas fa-2x fa-star star"></i>
-                <i class="far fa-2x fa-star unstar"></i>
+            <div class="rating-wrap" ref="rate">
+                <button type="button" class="rate-button" v-on:click="setRate(1)">
+                    <span v-if="rating >= 1"><i class="fas fa-2x fa-star rate"></i></span>
+                </button>
+                <button type="button" class="rate-button" v-on:click="setRate(2)">
+                    <span v-if="rating < 2"><i class="far fa-2x fa-star rate"></i></span>
+                    <span v-if="rating >= 2"><i class="fas fa-2x fa-star rate"></i></span>
+                </button>
+                <button type="button" class="rate-button" v-on:click="setRate(3)">
+                    <span v-if="rating < 3"><i class="far fa-2x fa-star rate"></i></span>
+                    <span v-if="rating >= 3"><i class="fas fa-2x fa-star rate"></i></span>
+                </button>
+                <button type="button" class="rate-button" v-on:click="setRate(4)">
+                    <span v-if="rating < 4"><i class="far fa-2x fa-star rate"></i></span>
+                    <span v-if="rating >= 4"><i class="fas fa-2x fa-star rate"></i></span>
+                </button>
+                <button type="button" class="rate-button" v-on:click="setRate(5)">
+                    <span v-if="rating < 5"><i class="far fa-2x fa-star rate"></i></span>
+                    <span v-if="rating >= 5"><i class="fas fa-2x fa-star rate"></i></span>
+                </button>
             </div>
             <button type="button" class="btn-mic" v-bind:class="{hide: isRecord == 'R' || isRecord == 'C'}" v-on:click="recordStart">
                 <i class="fas fa-2x fa-microphone"></i>
@@ -19,7 +33,7 @@
             </button>
             <audio src="" ref="audio"></audio>
         </div>
-        <textarea name="review" id="review-area" cols="15" rows="10"> </textarea>
+        <textarea name="review" id="review-area" cols="15" rows="10" v-model="review"> </textarea>
         <div class="article-button">
             <button type="button" class="write">등록</button>
             <button type="button" class="cancel" v-on:click="closePopup">취소</button>
@@ -35,7 +49,9 @@ export default {
             // I : init, R : Recording, C : Complete
             isRecord: 'I',
             recorder: null,
-            closed: false
+            closed: false,
+            rating: 1,
+            review: ''
         };
     },
     methods: {
@@ -69,6 +85,9 @@ export default {
         },
         closePopup: function () {
             this.closed = true;
+        },
+        setRate: function (starRate) {
+            this.rating = starRate;
         }
     },
     mounted() {
@@ -78,6 +97,19 @@ export default {
 </script>
 
 <style scoped>
+.rate-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.rate {
+    cursor: pointer;
+    color: var(--icon-color);
+}
 .btn-mic {
     background-color: var(--icon-color);
 }
