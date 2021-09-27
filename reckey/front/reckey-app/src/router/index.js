@@ -19,11 +19,13 @@ const routes = [
     },
     {
         path: '/company/:id',
-        component: Company
-    },
-    {
-        path: '/company/:id/keyboard',
-        component: Keyboard
+        component: Company,
+        children: [
+            {
+                path: 'keyboard',
+                component: Keyboard
+            }
+        ]
     }
 ];
 

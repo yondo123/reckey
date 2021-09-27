@@ -27,7 +27,7 @@ export default {};
 </script>
 <style scoped>
 main {
-    margin: 0 auto;
+    margin: 0 3.4rem;
     overflow-y: scroll;
     height: 64rem;
 }
