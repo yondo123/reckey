@@ -18,6 +18,8 @@ public class MainServiceImpl implements MainService{
 	
 	@Override
 	public List<KeyboardDTO.Info> getKeyboardList(KeyboardDTO.RequestList request) {
+		System.out.println(request.getOffset());
+		System.out.println(request.getPage());
 		List<KeyboardDTO.Info> keyboardList = mainRepository.getKeyboardList(request);
 		return keyboardList;
 	}

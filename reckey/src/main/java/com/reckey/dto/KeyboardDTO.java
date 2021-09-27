@@ -27,7 +27,7 @@ public class KeyboardDTO {
 	@Setter
 	public static class RequestList {
 		
-		@ApiParam(value = "sortType", required = true)
+		@ApiParam(value = "sortType")
 		private String sortType;
 		
 		@ApiParam(value ="offset", required = true)

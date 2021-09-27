@@ -31,7 +31,7 @@ public class SwaggerConfig {
 				.apiInfo(apiInfo(title, version))
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("com.reckey.controller"))
-				.paths(PathSelectors.ant("/reckey/**"))
+				.paths(PathSelectors.any())
 				.build();
 						
 	}
