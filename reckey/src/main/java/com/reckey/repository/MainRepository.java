@@ -11,5 +11,6 @@ import com.reckey.dto.KeyboardDTO;
 public interface MainRepository {
 
 	public List<KeyboardDTO.Info> getKeyboardList(KeyboardDTO.RequestList request);
-	public List<CompanyDTO.Info> getCompanyList();
+	public List<CompanyDTO.Info> getCompanyList(CompanyDTO.RequestList request);
+	public String[] getKeyboardSwitchType(String id);
 }

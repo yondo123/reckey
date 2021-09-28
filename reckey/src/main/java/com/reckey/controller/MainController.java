@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.reckey.dto.CompanyDTO;
@@ -38,8 +37,8 @@ public class MainController {
 	
 	@GetMapping("company-list")
 	@ResponseBody
-	public List<CompanyDTO.Info> companyList(@RequestBody CompanyDTO.Request request) {
-		List<CompanyDTO.Info> list = mainService.getCompanyList();
+	public List<CompanyDTO.Info> companyList(CompanyDTO.RequestList request) {
+		List<CompanyDTO.Info> list = mainService.getCompanyList(request);
 		return list;
 	}
 	

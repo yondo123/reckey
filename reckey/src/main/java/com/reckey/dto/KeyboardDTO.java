@@ -20,20 +20,20 @@ public class KeyboardDTO {
 		private String imgUrl;
 		private String type;
 		private double rate;
-		private String switchType;
+		private String[] switchType;
 	}
 	
 	@Getter
 	@Setter
 	public static class RequestList {
 		
-		@ApiParam(value = "sortType")
+		@ApiParam
 		private String sortType;
 		
-		@ApiParam(value ="offset", required = true)
+		@ApiParam(required = true)
 		private int offset;
 		
-		@ApiParam(value="page", required = true)
+		@ApiParam(required = true)
 		private int page;
 	}
 	

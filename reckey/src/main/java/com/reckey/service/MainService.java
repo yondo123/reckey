@@ -10,5 +10,5 @@ public interface MainService {
 
 	public List<KeyboardDTO.Info> getKeyboardList(KeyboardDTO.RequestList request);
 
-	public List<CompanyDTO.Info> getCompanyList();
+	public List<CompanyDTO.Info> getCompanyList(CompanyDTO.RequestList request);
 }

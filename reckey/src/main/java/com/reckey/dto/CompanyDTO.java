@@ -2,6 +2,7 @@ package com.reckey.dto;
 
 import java.util.List;
 
+import io.swagger.annotations.ApiParam;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -19,9 +20,15 @@ public class CompanyDTO {
 	
 	@Getter
 	@Setter
-	public static class Request{
+	public static class RequestList{
+		@ApiParam
 		private String sortType;
-		private String offset;
+		
+		@ApiParam(required = true)
+		private int offset;
+		
+		@ApiParam(required = true)
+		private int page;
 	}
 	
 	@Getter
