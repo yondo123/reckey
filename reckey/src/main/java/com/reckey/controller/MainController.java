@@ -5,10 +5,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.reckey.dto.CompanyDTO;
 import com.reckey.dto.KeyboardDTO;
+import com.reckey.dto.ResponseDTO;
+import com.reckey.dto.ReviewDTO;
 import com.reckey.service.MainService;
 
 import io.swagger.annotations.ApiOperation;
@@ -41,11 +44,27 @@ public class MainController {
 		List<CompanyDTO.Info> list = mainService.getCompanyList(request);
 		return list;
 	}
-	
-	@GetMapping()
-	public void getCategoryInfoList() {
-		
+
+	@GetMapping("keyboard-review")
+	@ResponseBody
+	public List<ReviewDTO.Info> reviewList(KeyboardDTO.RequestOne request){
+		List<ReviewDTO.Info> list = mainService.getReviewList(request);
+		return list;
 	}
 	
+	@PostMapping("review")
+	@ResponseBody
+	public ResponseDTO insertReview(ReviewDTO.requestOne request) {
+		ResponseDTO resDto = new ResponseDTO();
+		
+		int result = mainService.insertReview(request);
+
+		if(result == 0) {
+			resDto.setResult(false);
+		}
+		
+		resDto.setResult(true);
+		return resDto;
+	}
 	
 }

@@ -20,6 +20,7 @@ public class KeyboardDTO {
 		private String imgUrl;
 		private String type;
 		private double rate;
+		private int price;
 		private String[] switchType;
 	}
 	
@@ -39,9 +40,9 @@ public class KeyboardDTO {
 	
 	@Getter
 	@Setter
-	@AllArgsConstructor
 	public static class RequestOne {
-
+		@ApiParam(required = true)
+		private String id;
 	}
 	
 	@Getter
