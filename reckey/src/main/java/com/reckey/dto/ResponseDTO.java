@@ -9,10 +9,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseDTO<T> {
+public class ResponseDTO {
 
 	private String resultMsg;
 	private String resultCode;
 	private boolean result;
-	private T info;
+	private Object info;
 }
