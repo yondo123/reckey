@@ -44,27 +44,5 @@ public class MainController {
 		List<CompanyDTO.Info> list = mainService.getCompanyList(request);
 		return list;
 	}
-
-	@GetMapping("keyboard-review")
-	@ResponseBody
-	public List<ReviewDTO.Info> reviewList(KeyboardDTO.RequestOne request){
-		List<ReviewDTO.Info> list = mainService.getReviewList(request);
-		return list;
-	}
-	
-	@PostMapping("review")
-	@ResponseBody
-	public ResponseDTO insertReview(ReviewDTO.requestOne request) {
-		ResponseDTO resDto = new ResponseDTO();
-		
-		int result = mainService.insertReview(request);
-
-		if(result == 0) {
-			resDto.setResult(false);
-		}
-		
-		resDto.setResult(true);
-		return resDto;
-	}
 	
 }

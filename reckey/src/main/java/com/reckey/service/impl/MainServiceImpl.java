@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.reckey.dto.CompanyDTO;
 import com.reckey.dto.KeyboardDTO;
-import com.reckey.dto.ReviewDTO;
 import com.reckey.repository.MainRepository;
 import com.reckey.service.MainService;
 
@@ -35,16 +34,4 @@ public class MainServiceImpl implements MainService{
 		List<CompanyDTO.Info> companyList = mainRepository.getCompanyList(request);
 		return companyList;
 	}
-	
-	@Override
-	public List<ReviewDTO.Info> getReviewList(KeyboardDTO.RequestOne request){
-		List<ReviewDTO.Info> list = mainRepository.getReviewList(request);
-		return list;
-	}
-	
-	@Override
-	public int insertReview(ReviewDTO.requestOne request){
-		return mainRepository.insertReview(request);
-	}
-
 }

@@ -1,5 +1,7 @@
 package com.reckey.dto;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,5 +33,6 @@ public class ReviewDTO {
 		private String content;
 		private String recordUrl;
 		private int rate;
+		private MultipartFile recordFile;
 	}
 }

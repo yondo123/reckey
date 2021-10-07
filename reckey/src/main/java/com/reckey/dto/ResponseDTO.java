@@ -13,6 +13,6 @@ public class ResponseDTO {
 
 	private String resultMsg;
 	private String resultCode;
-	private boolean result;
+	private boolean result = true;
 	private Object info;
 }

@@ -16,8 +16,4 @@ public interface MainRepository {
 	public List<CompanyDTO.Info> getCompanyList(CompanyDTO.RequestList request);
 	
 	public String[] getKeyboardSwitchType(String id);
-	
-	public List<ReviewDTO.Info> getReviewList(KeyboardDTO.RequestOne request);
-	
-	public int insertReview(ReviewDTO.requestOne request);
 }
